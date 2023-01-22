@@ -2,7 +2,7 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr
 
 
-class Adress1(BaseModel):
+class Adress(BaseModel):
     region: str
     city: str
     street_type: Optional[str]
@@ -30,7 +30,7 @@ class Contacts(BaseModel):
 class Data(BaseModel):
     description: str
     employment: str
-    address: Adress1
+    address: Adress
     name: str
     salary: Salary
     contacts: Contacts
