@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "job-tut-test"
+version = "0.1.0"
+description = ""
+authors = ["DmitriyBessalov <dmitriy@bessalov.ru>"]
+readme = "README.md"
+packages = [{include = "job_tut_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
